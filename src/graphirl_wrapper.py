@@ -1,7 +1,7 @@
 import gym
 import numpy as np
 import torch
-import graphirl.common as common
+# import graphirl.common as common
 from torchkit import checkpoint
 import pickle
 import os

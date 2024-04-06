@@ -30,5 +30,5 @@ python3 src/train.py \
   --save_video \
   --pretrained_path ${15} \
   --reward_wrapper gil  \
-  --apply_wrapper \
-  --wandb 
+  --wandb \
+#  --apply_wrapper \

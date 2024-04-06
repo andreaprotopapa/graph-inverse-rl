@@ -8,3 +8,10 @@ src/sac
 logs/
 datasets/
 utils/
+wandb/
+condaenv*
+MUJOCO_LOG.TXT
+reward_models/
+dataset/
+push_graphirl/
+__pycache__/
