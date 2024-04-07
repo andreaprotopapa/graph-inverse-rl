@@ -14,7 +14,7 @@ python3 src/train.py \
   --log_dir /data/sateesh/reach_graphirl_logs \
   --eval_episodes 50 \
   --image_size 84 \
-  --render_image_size 224 \
+  --render_image_size 84 \
   --seed $4 \
   --cameras $2 \
   --camera_dropout $3 \
