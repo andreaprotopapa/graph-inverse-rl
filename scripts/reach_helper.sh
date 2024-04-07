@@ -14,7 +14,7 @@ python3 src/train.py \
   --train_steps 300k \
   --save_freq 50k \
   --frame_stack 1 \
-  --log_dir /data/sateesh/reach_graphirl_logs \
+  --log_dir reach_graphirl \
   --eval_episodes 50 \
   --image_size 84 \
   --render_image_size 84 \
