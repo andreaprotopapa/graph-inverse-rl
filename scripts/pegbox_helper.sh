@@ -28,7 +28,7 @@ python3 src/train.py \
   --context2 ${10} \
   --wandb_project pegbox_graphirl \
   --save_video \
-  --pretrained_path {15} \
+  --pretrained_path {14} \
   --reward_wrapper gil_pegbox  \
-  --apply_wrapper \
-  --wandb 
+  --wandb \
+# --apply_wrapper \
