@@ -14,4 +14,6 @@ MUJOCO_LOG.TXT
 reward_models/
 dataset/
 push_graphirl/
+pegbox_graphirl/
+reach_graphirl/
 __pycache__/
