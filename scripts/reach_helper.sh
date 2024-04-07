@@ -1,4 +1,7 @@
 export MUJOCO_GL=egl
+
+# --render_image_size 224 \
+
 python3 src/train.py \
   --algorithm ${12} \
   --domain_name robot \
@@ -15,7 +18,6 @@ python3 src/train.py \
   --eval_episodes 50 \
   --image_size 84 \
   --render_image_size 84 \
-# --render_image_size 224 \
   --seed $4 \
   --cameras $2 \
   --camera_dropout $3 \
