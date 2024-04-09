@@ -12,7 +12,7 @@ python3 src/train.py \
   --buffer_size 500k \
   --save_freq 50k \
   --frame_stack 1 \
-  --log_dir /data/sateesh/logs_pegbox_graphirl \
+  --log_dir pegbox_graphirl \
   --eval_episodes 50 \
   --image_size 84 \
   --render_image_size 84 \
