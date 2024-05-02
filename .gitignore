@@ -17,3 +17,4 @@ push_graphirl/
 pegbox_graphirl/
 reach_graphirl/
 __pycache__/
+*.egg-info

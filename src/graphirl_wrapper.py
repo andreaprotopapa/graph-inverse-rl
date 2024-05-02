@@ -1,7 +1,8 @@
 import gym
 import numpy as np
 import torch
-# import graphirl.common as common
+import xirl.common as common
+import xirl.utils as utils
 from torchkit import checkpoint
 import pickle
 import os
@@ -14,11 +15,12 @@ IMG_HEIGHT, IMG_WIDTH = 448, 448
 def load_model(pretrained_path, load_goal_emb):
   """Load a pretrained model and optionally a precomputed goal embedding."""
   device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-  config = common.load_config_from_dir(pretrained_path)
+  config = utils.load_config_from_dir(pretrained_path)
   model = common.get_model(config)
   checkpoint_dir = os.path.join(pretrained_path, "checkpoints")
-  checkpoint_manager = checkpoint.CheckpointManager(
-      checkpoint.Checkpoint(model=model), checkpoint_dir, device)
+  # checkpoint_manager = checkpoint.CheckpointManager(
+  #     checkpoint.Checkpoint(model=model), checkpoint_dir, device)
+  checkpoint_manager = checkpoint.CheckpointManager(checkpoint_dir, model=model)
   global_step = checkpoint_manager.restore_or_initialize()
 
 #  model.load_state_dict(torch.load(checkpoint_dir + "/0000000000008001.ckpt"))

@@ -31,4 +31,4 @@ python3 src/train.py \
   --pretrained_path ${14} \
   --reward_wrapper gil  \
   --wandb \
-#  --apply_wrapper \
+  --apply_wrapper \

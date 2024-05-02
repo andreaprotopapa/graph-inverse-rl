@@ -196,13 +196,10 @@ def main(args):
 		env = get_wrapper(args.reward_wrapper, env, args.image_size, pretrained_path = args.pretrained_path)
 		test_env = get_wrapper(args.reward_wrapper, test_env, args.image_size, pretrained_path=  args.pretrained_path)
 		observation_space = (3, env.img_size, env.img_size)
-	#observation_space = (3, 84, 84)
-	# Visualize initial configurations
+		#observation_space = (3, 84, 84)
 	else:
 		assert args.image_size == args.render_image_size, "Resolution must be same if not using gil wrapper"
-		observation_space = (3, args.image_size, args.image_size)
-
-	
+		observation_space = (3, args.image_size, args.image_size)	
 	# Visualize initial configurations
 	if args.visualize_configurations:
 		visualize_configurations(env, args)
